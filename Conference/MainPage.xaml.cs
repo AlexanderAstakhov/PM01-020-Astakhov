@@ -29,6 +29,7 @@ namespace Conference
             txtSearch.TextChanged += TxtSearch_TextChanged;
             txtSearchdescr.TextChanged += txtSearchdescr_TextChanged;
             UpdateUsers();
+            DescriptionEvents();
         }
 
         private void UpdateUsers()
@@ -61,6 +62,18 @@ namespace Conference
             UpdateUsers();
         }
 
+        private void DescriptionEvents()
+        {
+            object a = ListHome.SelectedItem;
+            
+            if(a != null)
+            {
+                NavigationService?.Navigate(new OpenEvent());
+            }
+            
+
+
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService?.Navigate(new Auth());

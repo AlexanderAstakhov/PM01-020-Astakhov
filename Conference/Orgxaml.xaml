@@ -29,7 +29,7 @@
             <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left" Margin="10,84,0,63" Width="447" >
 
                 <Image x:Name="userPhoto" Width="250" Height="150"  HorizontalAlignment="Left" Margin="5" />
-                <Button Content="Мой профиль" Width="150" Height="100"  HorizontalAlignment="Left" Margin="5"/>
+                <Button Content="Мой профиль" Width="150" Height="100"  HorizontalAlignment="Left" Margin="5" Click="Button_Click_1"/>
                 <Button Content="Регистрация" Width="150" Height="100"  HorizontalAlignment="Left" Margin="5" Click="Button_Click"/>
             </StackPanel>
 
